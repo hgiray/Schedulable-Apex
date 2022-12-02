@@ -1,0 +1,8 @@
+public class SchedulableApex implements Schedulable {
+    public void execute(SchedulableContext sc){
+        
+        list<lead> dltlist=[select lastname from lead where lastname like 'Test%'];
+     delete dltlist;   
+    }
+
+}
